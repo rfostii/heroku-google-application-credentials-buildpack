@@ -10,6 +10,3 @@ mkdir -p $BUILD_DIR/.profile.d
 CREDENTIALS=$(cat ${ENV_DIR}/GOOGLE_CREDENTIALS)
 echo "echo ${CREDENTIALS@Q} > /app/google-credentials.json" > $BUILD_DIR/.profile.d/google-credentials.sh
 chmod +x $BUILD_DIR/.profile.d/google-credentials.sh
-cd $BUILD_DIR
-pip install -r requirements.txt
-cd -
